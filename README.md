@@ -5,7 +5,7 @@ This is a utility to update the firmware of the JMicron JMS578 USB/SATA bridge. 
 ### Build the utility:
 Note that you need to install ```golang``` for ubuntu or ```go``` for arch if you don't have it.
 
-```./go build```
+```go build```
 
 ### Dump the BootROM:
 The chip has a small internal ROM that normally loads the firmware from flash and starts it. If no valid firmware is found, it connects to the host and presents a zero bytes SCSI device that has a few vendor commands to load the initial firmware.
